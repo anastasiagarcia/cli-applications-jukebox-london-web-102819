@@ -31,7 +31,8 @@ def play(songs)
   answer=gets.strip
   if answer.to_i>=1 || answer.to_i<=songs.length
     puts "Playing #$songs[answer.to_i]"
-  else
+  end
+  if answer
     puts "Invalid input, please try again"
   end
 end
