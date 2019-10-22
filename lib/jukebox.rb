@@ -50,5 +50,7 @@ end
 def run 
   puts "Please enter a comand:"
   command= gets.strip
-  if command
+  if command=="exit"
+    exit_jukebox
+  end
 end
