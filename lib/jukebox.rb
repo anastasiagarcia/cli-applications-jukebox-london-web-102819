@@ -22,7 +22,7 @@ def list(songs)
   i=0
   songs.each {|song|
     i+=1
-    puts "#@i. #@song"
+    puts "#{i}. #{song}"
   }
 end
 
