@@ -32,11 +32,11 @@ def play(songs)
   song_number=answer.to_i
   if song_number>=1 || song_number<=songs.length
     song_playing=songs[song_number-1]
-    puts "Playing #@song_playing"
+    puts "Playing #{song_playing}"
   else
     playing_song=songs.detect {|song| answer == song}
     if playing_song!= nil 
-      puts "Playing #@playing_song"
+      puts "Playing #{playing_song}"
     else
       puts "Invalid input, please try again"
     end
