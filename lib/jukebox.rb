@@ -33,6 +33,7 @@ def play(songs)
     puts "Playing #$songs[answer.to_i]"
   else
     puts "Invalid input, please try again"
+  end
 end
 
 def exit_jukebox 
