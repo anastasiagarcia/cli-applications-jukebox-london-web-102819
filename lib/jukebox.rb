@@ -29,7 +29,10 @@ end
 def play(songs) 
   puts "Please enter a song name or number:"
   answer=gets.strip
-  if answer
+  if answer.to_i>=1 || answer.to_i<=songs.length
+    puts "Playing #$songs[answer.to_i]"
+  end
+  
 #else
   puts "Invalid input, please try again"
 end
