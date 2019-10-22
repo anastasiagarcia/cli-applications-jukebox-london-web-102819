@@ -31,7 +31,7 @@ def play(songs)
   answer=gets.strip
   song_number=answer.to_i
   if song_number>=1 || song_number<=songs.length
-    song_playing=songs[song_number]
+    song_playing=songs[song_number-1]
     puts "Playing #$song_playing"
   else
     playing_song=songs.detect {|song| answer == song}
