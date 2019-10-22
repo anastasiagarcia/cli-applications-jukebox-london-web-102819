@@ -52,5 +52,5 @@ def run
   command= gets.strip
   if command=="exit"
     exit_jukebox
-  end
+  else 
 end
