@@ -19,6 +19,11 @@ def help
 end
 
 def list(songs) 
+  i=0
+  songs.each {|song|
+    i+=1
+    puts #{i +song}
+  }
 end
 
 def play(songs) 
