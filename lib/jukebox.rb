@@ -47,12 +47,13 @@ def exit_jukebox
   puts "Goodbye"
 end
 
-def run 
+def run
   while true 
     puts "Please enter a comand:"
     command= gets.strip
     if command=="exit"
      exit_jukebox
+     break
     elsif command=="play"
       play(songs)
     elsif command=="list"
