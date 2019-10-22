@@ -35,6 +35,7 @@ def play(songs)
   playing_song=songs.detect {|song| answer == song}
   if playing_song!= nil 
     puts "Playing #$playing_song"
+  end
     puts "Invalid input, please try again"
   end
 end
