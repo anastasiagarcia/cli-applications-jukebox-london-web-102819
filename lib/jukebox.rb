@@ -31,12 +31,13 @@ def play(songs)
   answer=gets.strip
   if answer.to_i>=1 || answer.to_i<=songs.length
     puts "Playing #$songs[answer.to_i]"
-  end
-  playing_song=songs.detect {|song| answer == song}
-  if playing_song!= nil 
-    puts "Playing #$playing_song"
-  end
-    puts "Invalid input, please try again"
+  else
+    playing_song=songs.detect {|song| answer == song}
+    if playing_song!= nil 
+      puts "Playing #$playing_song"
+    else
+      puts "Invalid input, please try again"
+    end
   end
 end
 
