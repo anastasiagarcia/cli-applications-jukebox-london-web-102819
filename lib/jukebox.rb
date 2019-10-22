@@ -33,7 +33,7 @@ def play(songs)
     puts "Playing #$songs[answer.to_i]"
   end
   
-#else
+else
   puts "Invalid input, please try again"
 end
 
